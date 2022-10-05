@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../../images/main/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+a{
+  text-decoration:none;
+}
+ /* responsive */ 
+  @media only screen and (max-width:570px){
+    .resolution{
+    font-size:15px;
+    }
+    .content-box .all .resolutions form .resolution .quality {
+    font-size:15px;
+    }
+  }
+  @media only screen and (max-width:400px){
+       .content-box .all .details .type {
+           bottom: 0px;
+           right: 0px;
+       }
+       .box-downloader .logo .title span {
+           right: 20px;
+       }
+       .content-box .all .resolutions form .resolution {
+           padding: 8px 17px;
+       }
+  }
+
+@media (max-width: 1088px) {
+  .box-downloader {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}
+@media (max-width: 970px) {
+  .box-downloader {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
+}
+@media (max-width: 886px) {
+  .box-downloader {
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+  }
+}
+@media (max-width: 864px) {
+  .content-box .right .mark img {
+    height: 60px !important;
+  }
+}
+@media (max-width: 760px) {
+  .box-downloader {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+  }
+  .box-downloader .content-box {
+    flex-direction: column !important;
+  }
+  .content-box .left {
+    width: 90% !important;
+  }
+  .content-box .right {
+    width: 90% !important;
+    margin-top: 15px !important;
+  }
+}
+
+/* start header style */
+
+.box-downloader {
+  background-color: #0d6efd33;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid #7070707a;
+  margin-top: 9px;
+}
+.box-downloader .logo {
+  position: relative;
+  padding-top: 20px;
+}
+.box-downloader .logo img {
+  display: block;
+  margin: auto;
+  height: 50px;
+}
+.box-downloader .logo .title {
+  display: block;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+  position: relative;
+}
+.box-downloader .logo .title span {
+  position: absolute;
+  color: #ff0000;
+  font-size: 10px;
+  top: 30px;
+}
+
+/* content box */
+.box-downloader .content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius:20px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f7f7f7;
+  border-radius:20px
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.submit {
+  display: block;
+  background-color:#0c229c;;
+  color: white;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer
+}
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: lightgray;
+      opacity: 1; /* Firefox */
+  }
+  .Comments{
+    background:#FFFFFB;
+    border:1px solid #eee;
+    border-radius: 20px;
+    max-height: 400px;
+    overflow-y:scroll;
+    border-bottom-right-radius:0;
+    border-top-right-radius:0;
+  }
+  .Comment{
+    background:#ccc;
+    border-radius:10px;
+    width:90%;
+    margin:0 auto 5px auto;
+    padding:5px;
+  }
+  textarea{
+    resize:none;
+    width:100%;
+    height:130px;
+    background:none;
+    color:white;
+    border:none;
+    margin:5px;
+  }
+  textarea:focus{
+    outline:none;
+  }
+  .comment_form{
+    width:95%;
+    margin: 20px auto 0 auto;
+    background:#555;
+    border: 4px inset;
+    border-radius: 20px;
+    padding:5px;
+  }
+/* left box */
+.content-box .left {
+  background-color: #5c7beb;
+  position: relative;
+  width: 45%;
+  border-radius: 5px;
+  padding: 25px;
+}
+.content-box .left .link {
+  position: relative;
+}
+.content-box .left .title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content-box .left form .url {
+  width: 100%;
+  padding: 13px;
+  border-radius: 100px;
+  outline: none;
+  border: 4px solid #bce2fa;
+  margin-top: 20px;
+}
+.content-box .left form div label {
+  color: white;
+}
+.content-box .left form .video {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.content-box .left form .video span {
+  content: "720p";
+  position: absolute;
+  color: #ff0000;
+  font-size: 9px;
+  top: 17px;
+  font-weight: bold;
+}
+.content-box .left form .audio {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+}
+.content-box .left form .audio span {
+  content: "320k";
+  position: absolute;
+  color: #ff0000;
+  font-size: 9px;
+  top: 17px;
+  font-weight: bold;
+}
+.content-box .left form .submit {
+  position: absolute;
+  top: 24px;
+  right: 4px;
+  border-radius: 0 24px 24px 0;
+  border: none;
+  padding: 13px;
+  outline: none;
+  background-color: #0c229c;
+  color: white;
+  outline: 1px solid #bce2fa;
+}
+/* right box */
+.content-box .right {
+  position: relative;
+  padding: 25px;
+  background-color: #5c7beb;
+  border-radius: 5px;
+  width: 45%;
+  min-height: 222.33px;
+}
+.content-box .right .title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+.content-box .right .mark img {
+  position: absolute;
+  top: 53px;
+  left: 6px;
+  height: 77px;
+}
+.content-box .right .box-info {
+  background-color: #142128;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.content-box .right .flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content-box .right .flex span {
+  color: white;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content-box .right .flex.video {
+  margin-left: -45px;
+}
+/* end downloader box */
