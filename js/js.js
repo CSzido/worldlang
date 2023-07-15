@@ -3,7 +3,7 @@
     "use strict";
     const typed = document.getElementsByClassName("typed");
     if (typed) {
-      let typed_strings = ["The world's first multilingual programming language 🌎"];
+      let typed_strings = ["The world's first multilingual programming language 🌎", "Taking Programming to the next level ✨🚀", "Feel the power of the future AI + Programming ✨❤"];
       new Typed('.typed', {
         strings: typed_strings,
         loop: true,
